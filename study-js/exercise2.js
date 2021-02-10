@@ -45,7 +45,7 @@ let nums = [1,2,3,4,5,6,7,8,9,10];
 for (let n of get_evens(nums)){
     console.log(n);
 }
-function* find_evens(numbers){ // blocking function
+function* find_evens(numbers){ // generator function
     for (let n of numbers){
         console.log("find_evens:for:"+n);
         if (n%2 == 0) yield n;
